@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+<title id="title">Tasreeb — Water Leak Detector Wiring</title>
+<desc id="description">Wemos D1 ESP8266 wiring diagram. Three-pin water sensor + to 3V3, - to common GND, S to D5 GPIO14. Active buzzer positive to D6 GPIO12 and negative to common GND. Wemos D1 powered via Micro-USB 5V 1A.</desc>
+<defs>
+  <style>
+    text{font-family:Inter,"Segoe UI",Arial,sans-serif}
+    .title{font-size:37px;font-weight:750;letter-spacing:-.5px}.subtitle{font-size:18px;fill:#66758a}.section{font-size:24px;font-weight:750}.device{font-size:16px;font-weight:700;letter-spacing:1.2px}.small{font-size:15px;fill:#5c6c82}.pin{font-size:15px;font-weight:750}.boardPin{font-size:17px;font-weight:750;fill:#ecf4fa}.call{font-size:18px;font-weight:700}.foot{font-size:16px;font-weight:600}
+    .wire{fill:none;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;}
+  </style>
+</defs>
+<rect width="1600" height="1000" fill="#f2f4f7"/>
+<rect x="24" y="22" width="1552" height="956" rx="30" fill="#f6f7f9" stroke="#dce2e9" stroke-width="2"/>
+<text x="800" y="83" text-anchor="middle" class="title">Tasreeb — Water Leak Detector Wiring</text>
+<text x="800" y="117" text-anchor="middle" class="subtitle">Ceiling water-leak detection · Wemos D1 / ESP8266</text>
+<line x1="85" y1="147" x2="1515" y2="147" stroke="#dce2e9" stroke-width="2"/>
+
+<!-- All circuit traces appear beneath the component bodies. Rounded corners make the route unambiguous. -->
+<path class="wire" stroke="#df3d42" d="M425 339 H506 Q516 339 516 349 V374 Q516 384 526 384 H642"/>
+<path class="wire" stroke="#252b35" d="M425 393 H486 Q496 393 496 403 V426 Q496 436 506 436 H642"/>
+<path class="wire" stroke="#edb819" d="M425 447 H526 Q536 447 536 457 V478 Q536 488 546 488 H642"/>
+<path class="wire" stroke="#f18a29" d="M1042 476 H1155 Q1165 476 1165 466 V420 Q1165 410 1175 410 H1260"/>
+<path class="wire" stroke="#252b35" d="M1042 535 H1185 Q1195 535 1195 525 V462 Q1195 452 1205 452 H1260"/>
+
+<!-- Sensor module -->
+<g>
+  <rect x="95" y="235" width="322" height="354" rx="18" fill="#166b9b" stroke="#0c4c71" stroke-width="4"/>
+  <circle cx="122" cy="262" r="9" fill="#f6f7f9"/><circle cx="390" cy="262" r="9" fill="#f6f7f9"/>
+  <circle cx="122" cy="561" r="9" fill="#f6f7f9"/><circle cx="390" cy="561" r="9" fill="#f6f7f9"/>
+  <rect x="129" y="268" width="176" height="120" rx="10" fill="#e7f1f5" stroke="#bdd4df" stroke-width="3"/>
+  <path d="M151 298 H285 M151 319 H285 M151 340 H285 M151 361 H285" stroke="#91bfcd" stroke-width="5" stroke-linecap="round"/>
+  <path d="M163 298 V361 M193 298 V361 M223 298 V361 M253 298 V361 M283 298 V361" stroke="#b7d3db" stroke-width="3"/>
+  <text x="255" y="538" text-anchor="middle" fill="#fff" style="font-size:20px;font-weight:750">WATER SENSOR</text>
+  <text x="255" y="561" text-anchor="middle" fill="#d7e9f3" style="font-size:15px;font-weight:600">3-pin module: + / − / S</text>
+</g>
+<!-- Sensor terminals, each is individually named. -->
+<g>
+  <text x="393" y="345" text-anchor="end" class="boardPin">+</text><circle cx="417" cy="339" r="12" fill="#e8ecf1" stroke="#df3d42" stroke-width="5"/>
+  <text x="393" y="399" text-anchor="end" class="boardPin">−</text><circle cx="417" cy="393" r="12" fill="#e8ecf1" stroke="#252b35" stroke-width="5"/>
+  <text x="393" y="453" text-anchor="end" class="boardPin">S</text><circle cx="417" cy="447" r="12" fill="#e8ecf1" stroke="#edb819" stroke-width="5"/>
+</g>
+
+<!-- Wemos D1 controller -->
+<g>
+  <rect x="642" y="261" width="400" height="395" rx="24" fill="#17283c" stroke="#0c1929" stroke-width="5"/>
+  <circle cx="674" cy="294" r="11" fill="#e7edf3"/><circle cx="1010" cy="294" r="11" fill="#e7edf3"/>
+  <circle cx="674" cy="623" r="11" fill="#e7edf3"/><circle cx="1010" cy="623" r="11" fill="#e7edf3"/>
+  <rect x="720" y="288" width="245" height="68" rx="9" fill="#244b64" stroke="#426e82" stroke-width="2"/>
+  <text x="842" y="330" text-anchor="middle" fill="#f5fafc" style="font-size:23px;font-weight:800">WEMOS D1</text>
+  <rect x="727" y="384" width="229" height="211" rx="15" fill="#294155" stroke="#527188" stroke-width="3"/>
+  <rect x="768" y="412" width="148" height="158" rx="9" fill="#152c3e" stroke="#718fa2" stroke-width="3"/>
+  <text x="842" y="474" text-anchor="middle" fill="#e8f2f7" style="font-size:27px;font-weight:750">ESP8266</text>
+  <text x="842" y="505" text-anchor="middle" fill="#acccda" style="font-size:16px;font-weight:700">Wi-Fi controller</text>
+  <path d="M811 537 Q842 509 873 537 M822 545 Q842 528 862 545" fill="none" stroke="#6faed0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="842" cy="553" r="4" fill="#6faed0"/>
+  <rect x="801" y="643" width="82" height="31" rx="6" fill="#bdc8d1" stroke="#8495a4" stroke-width="3"/>
+  <rect x="816" y="646" width="52" height="17" rx="2" fill="#546577"/>
+</g>
+<!-- Board's connector pads, with full mapping. -->
+<g>
+  <circle cx="642" cy="384" r="13" fill="#e8ecf1" stroke="#df3d42" stroke-width="5"/><text x="664" y="390" class="boardPin">3V3</text>
+  <circle cx="642" cy="436" r="13" fill="#e8ecf1" stroke="#252b35" stroke-width="5"/><text x="664" y="442" class="boardPin">GND</text>
+  <circle cx="642" cy="488" r="13" fill="#e8ecf1" stroke="#edb819" stroke-width="5"/><text x="664" y="494" class="boardPin">D5 / GPIO14</text>
+  <circle cx="1042" cy="476" r="13" fill="#e8ecf1" stroke="#f18a29" stroke-width="5"/><text x="1019" y="482" text-anchor="end" class="boardPin">D6 / GPIO12</text>
+  <circle cx="1042" cy="535" r="13" fill="#e8ecf1" stroke="#252b35" stroke-width="5"/><text x="1019" y="541" text-anchor="end" class="boardPin">GND</text>
+  <text x="842" y="614" text-anchor="middle" fill="#9bb9c8" style="font-size:13px;font-weight:700;letter-spacing:1px">COMMON GROUND</text>
+</g>
+
+<!-- Active buzzer -->
+<g>
+  <circle cx="1374" cy="431" r="117" fill="#273240" stroke="#121b27" stroke-width="5"/>
+  <circle cx="1374" cy="431" r="90" fill="#141c26" stroke="#48596b" stroke-width="7"/>
+  <circle cx="1374" cy="431" r="58" fill="#202a35" stroke="#101820" stroke-width="4"/>
+  <circle cx="1374" cy="431" r="18" fill="#637589"/>
+</g>
+<circle cx="1260" cy="410" r="12" fill="#e8ecf1" stroke="#f18a29" stroke-width="5"/>
+<circle cx="1260" cy="452" r="12" fill="#e8ecf1" stroke="#252b35" stroke-width="5"/>
+<text x="1284" y="406" class="pin" fill="#fff" style="font-size:22px">+</text>
+<text x="1284" y="464" class="pin" fill="#fff" style="font-size:22px">−</text>
+<text x="1374" y="593" text-anchor="middle" class="section">Active buzzer</text>
+<text x="1374" y="620" text-anchor="middle" class="small">+ signal · − ground</text>
+
+<!-- USB power: connector and cable end at actual board USB socket. -->
+<path d="M842 674 V715 Q842 726 853 726 H916 Q927 726 927 737 V770" fill="none" stroke="#607589" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="849" y="706" width="34" height="19" rx="5" fill="#c5d1db" stroke="#8799a8" stroke-width="2"/>
+<g>
+  <rect x="779" y="772" width="296" height="91" rx="17" fill="#fff" stroke="#cdd6df" stroke-width="2"/>
+  <rect x="805" y="795" width="45" height="44" rx="7" fill="#667b8c"/>
+  <path d="M850 817 H877" stroke="#667b8c" stroke-width="9" stroke-linecap="round"/>
+  <text x="895" y="810" class="device">MICRO-USB</text>
+  <text x="895" y="836" class="small">5V / 1A power supply</text>
+</g>
+
+<!-- Compact explicit connection key -->
+<g>
+  <rect x="92" y="699" width="567" height="171" rx="18" fill="#fff" stroke="#d8e0e8" stroke-width="2"/>
+  <text x="121" y="737" class="section" style="font-size:21px">Connections</text>
+  <line x1="122" y1="770" x2="166" y2="770" stroke="#df3d42" stroke-width="9" stroke-linecap="round"/><text x="181" y="776" class="foot">Sensor + → 3V3</text>
+  <line x1="122" y1="807" x2="166" y2="807" stroke="#edb819" stroke-width="9" stroke-linecap="round"/><text x="181" y="813" class="foot">Sensor S → D5 (GPIO14)</text>
+  <line x1="122" y1="844" x2="166" y2="844" stroke="#252b35" stroke-width="9" stroke-linecap="round"/><text x="181" y="850" class="foot">Sensor − → Wemos GND</text>
+</g>
+<g>
+  <rect x="1114" y="699" width="394" height="171" rx="18" fill="#fff" stroke="#d8e0e8" stroke-width="2"/>
+  <text x="1143" y="737" class="section" style="font-size:21px">Buzzer and sensor</text>
+  <line x1="1145" y1="770" x2="1189" y2="770" stroke="#f18a29" stroke-width="9" stroke-linecap="round"/><text x="1205" y="776" class="foot">Buzzer + → D6 (GPIO12)</text>
+  <line x1="1145" y1="807" x2="1189" y2="807" stroke="#252b35" stroke-width="9" stroke-linecap="round"/><text x="1205" y="813" class="foot">Buzzer − → Wemos GND</text>
+  <text x="1144" y="850" class="foot" fill="#66758a">S output: verify sensor type</text>
+</g>
+<text x="800" y="925" text-anchor="middle" class="subtitle" style="font-size:17px;font-weight:650">Powered from Micro-USB (5V / 1A) · Shared ground for sensor and buzzer</text>
+</svg>
