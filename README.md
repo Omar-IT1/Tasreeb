@@ -12,7 +12,7 @@
 
 **A low-cost, always-on ESP8266 node that detects water leaking through a ceiling or roof slab, raises an immediate local siren, and pushes an instant Telegram alert to your phone — then confirms automatically when the leak clears.**
 
-Built to catch slab seepage and A/C drain-pan overflow *before* it reaches drywall, wiring, or furniture.
+Built to catch slab seepage and A/C drain-pan overflow *before* it reaches drywall, wiring, or furniture. 
 
 </div>
 
